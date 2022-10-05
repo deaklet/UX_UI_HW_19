@@ -124,6 +124,48 @@ footer li{
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
+@keyframes wobble-top {
+	16.65% {
+		transform: skew(-12deg);
+	}
+
+	33.3% {
+		transform: skew(10deg);
+	}
+
+	49.95% {
+		transform: skew(-6deg);
+	}
+
+	66.6% {
+		transform: skew(4deg);
+	}
+
+	83.25% {
+		transform: skew(-2deg);
+	}
+
+	100% {
+		transform: skew(0);
+	}
+}
+
+.skill:hover {
+  animation-name: wobble-top;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.pro1img:hover, .pro2img:hover, .pro3img:hover {
+  animation-name: wobble-top;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
+
 @media only screen and (max-width: 600){
   .workGrid{
     display: grid;
