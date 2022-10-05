@@ -7,6 +7,7 @@
   width: 12%;
   padding: 1%;
   text-align: top;
+  cursor: pointer;
 }
 
 nav{
@@ -78,6 +79,7 @@ footer li{
 }
 .aboutMe h2{
   text-align: center;
+  cursor: pointer;
 }
 
 .workGrid{
@@ -91,10 +93,35 @@ footer li{
   ;
 }
 
+
 .Projects{
   width: 100%;
   padding: 30px;
   text-align: center;
+}
+
+.Projects h1{
+  cursor: pointer;
+}
+
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  border-radius: 10px;
+ }
+
+ .btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
 @media only screen and (max-width: 600){
@@ -112,3 +139,4 @@ footer li{
     ;
   }
 }
+
