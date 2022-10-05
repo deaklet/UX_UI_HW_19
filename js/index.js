@@ -18,7 +18,6 @@ $(document).ready(function(){
 });
 });  
 
-
   $(".aboutMe h2").click(function(){
     $(".flexContainer").fadeToggle();
   });
